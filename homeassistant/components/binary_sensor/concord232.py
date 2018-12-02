@@ -92,6 +92,14 @@ def get_opening_type(zone):
         return 'smoke'
     if 'WATER' in zone['name']:
         return 'water'
+    if 'GLASS' in zone['name']:
+        return 'vibration'
+    if 'WINDOW' in zone['name']:
+        return 'window'
+    if 'CARBON MONOXIDE' in zone['name']:
+        return 'smoke'
+    if 'OHD' in zone['name']:
+        return 'garage_door'
     return 'opening'
 
 
